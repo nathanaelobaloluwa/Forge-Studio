@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Structured training. Serious coaching. A community that expects more from you.">
+<link rel="canonical" href="https://forgestudio.co/">
+<title>FORGE — Performance Training Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-label" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#hero" class="logo" aria-label="FORGE — home">FORGE<b>/</b></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#method" data-sec="method">Training</a></li>
+        <li><a class="nav-link" href="#coaches" data-sec="coaches">Coaches</a></li>
+        <li><a class="nav-link" href="#programs" data-sec="programs">Programs</a></li>
+        <li><a class="nav-link" href="#stories" data-sec="stories">Stories</a></li>
+        <li><a class="nav-link" href="#community" data-sec="community">Community</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1rem">
+      <button class="nav-cta magnetic js-open-booking">Book a Trial <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#method" style="transition-delay:.05s">Training</a>
+  <a href="#coaches" style="transition-delay:.12s">Coaches</a>
+  <a href="#programs" style="transition-delay:.19s">Programs</a>
+  <a href="#stories" style="transition-delay:.26s">Stories</a>
+  <a href="#community" style="transition-delay:.33s">Community</a>
+  <button class="mnav-cta js-open-booking" style="transition-delay:.4s">Book a Trial →</button>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="https://picsum.photos/seed/forge-hero/1920/1080?grayscale" alt="" fetchpriority="high">
+  </div>
+
+  <button class="sound-toggle" id="soundToggle" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
+    <span id="soundLabel">Sound off / tap to experience</span>
+  </button>
+
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="hero-eyebrow eyebrow rv">Est. 2018 &nbsp;•&nbsp; Performance Training</p>
+        <h1 class="rv" style="--d:.08s">Built<br>Not Born<span class="accent">.</span></h1>
+        <p class="hero-sub rv" style="--d:.16s">Structured training. Serious coaching. A community that expects more from you.</p>
+        <div class="hero-ctas rv" style="--d:.24s">
+          <button class="btn btn-primary magnetic js-open-booking">Book a Trial Class <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          <a class="btn btn-ghost btn-down magnetic" href="#method">Explore Training <span class="arr"><svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></a>
+        </div>
+      </div>
+
+      <div class="hero-coaches rv" style="--d:.3s" id="heroCoaches" aria-label="Featured coaches">
+        <article class="hcoach" data-depth="14" data-cursor="View">
+          <img src="https://picsum.photos/seed/forge-coach-a/400/500?grayscale" alt="Coach Marcus Reed, strength and conditioning specialist" loading="lazy">
+          <div class="hcoach-meta"><strong>MARCUS REED</strong><span>Strength &amp; Conditioning — 12 yrs</span></div>
+        </article>
+        <article class="hcoach" data-depth="26" data-cursor="View">
+          <img src="https://picsum.photos/seed/forge-coach-b/400/500?grayscale" alt="Coach Elena Voss, olympic lifting specialist" loading="lazy">
+          <div class="hcoach-meta"><strong>ELENA VOSS</strong><span>Olympic Lifting — 9 yrs</span></div>
+        </article>
+        <article class="hcoach" data-depth="20" data-cursor="View">
+          <img src="https://picsum.photos/seed/forge-coach-c/400/500?grayscale" alt="Coach Darius Cole, boxing and conditioning specialist" loading="lazy">
+          <div class="hcoach-meta"><strong>DARIUS COLE</strong><span>Boxing &amp; Conditioning — 8 yrs</span></div>
+        </article>
+        <span class="hero-coaches-label">The people behind the standard</span>
+      </div>
+    </div>
+
+    <div class="hero-stats rv" style="--d:.35s" role="list">
+      <div class="hstat" role="listitem"><span class="num" data-count="2500" data-suffix="+">0</span><span class="lbl">Members</span></div>
+      <div class="hstat" role="listitem"><span class="num" data-count="18">0</span><span class="lbl">Elite Coaches</span></div>
+      <div class="hstat" role="listitem"><span class="num" data-count="42">0</span><span class="lbl">Weekly Classes</span></div>
+      <div class="hstat" role="listitem"><span class="num" data-count="7">0</span><span class="lbl">Years of Training</span></div>
+    </div>
+  </div>
+  <span class="scroll-hint" aria-hidden="true">Scroll</span>
+</section>
+
+<!-- ============ BRAND STATEMENT ============ -->
+<section class="statement" id="statement">
+  <span class="bgnum" data-para="0.12" style="top:-2rem;right:2rem" aria-hidden="true">01</span>
+  <div class="wrap statement-grid">
+    <div>
+      <p class="eyebrow rv">The Standard</p>
+      <h2 class="rv" style="--d:.08s;margin-top:1rem">Discipline is not<br>a personality.<br><em>It's a practice.</em></h2>
+      <p class="rv" style="--d:.16s">Every session has a purpose. Every rep has intent. Every member contributes to the standard — and the standard is what you become part of the moment you walk in.</p>
+    </div>
+    <figure class="statement-img rv" style="--d:.2s" data-cursor="Explore">
+      <img src="https://picsum.photos/seed/forge-statement/800/1000?grayscale" alt="Close-up of an athlete's hands gripping a barbell mid-lift" loading="lazy">
+      <figcaption class="statement-tag">No shortcuts</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section id="programs" data-nav>
+  <div class="wrap">
+    <header class="sec-head split">
+      <div class="rv">
+        <p class="eyebrow">Programs</p>
+        <h2 class="sec-title" style="margin-top:.8rem">Choose your<br>direction<span class="dot">.</span></h2>
+      </div>
+      <p class="sec-sub rv" style="--d:.1s">Three tracks. One standard. Every program is coach-led, data-informed, and built around your goal.</p>
+    </header>
+
+    <div class="progs">
+      <a class="prog rv" href="#schedule" data-cursor="Explore" aria-label="Build program — view details">
+        <img src="https://picsum.photos/seed/forge-build/900/1100?grayscale" alt="Athlete performing a heavy barbell back squat" loading="lazy">
+        <span class="prog-num">01</span>
+        <div class="prog-body">
+          <h3>Build</h3>
+          <ul class="prog-tags"><li>Muscle Gain</li><li>Strength Development</li><li>Progressive Overload</li></ul>
+          <p class="prog-desc">Structured hypertrophy and strength blocks with tracked progression. You will know exactly why every kilo on the bar is there.</p>
+          <span class="prog-cta">View Program <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="prog rv" style="--d:.1s" href="#schedule" data-cursor="Explore" aria-label="Lean program — view details">
+        <img src="https://picsum.photos/seed/forge-lean/900/1100?grayscale" alt="Member pushing through an intense conditioning circuit" loading="lazy">
+        <span class="prog-num">02</span>
+        <div class="prog-body">
+          <h3>Lean</h3>
+          <ul class="prog-tags"><li>Fat Loss</li><li>Conditioning</li><li>Athletic Performance</li></ul>
+          <p class="prog-desc">High-output conditioning designed to strip fat without wasting muscle. Engine work that shows up in everything else you do.</p>
+          <span class="prog-cta">View Program <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="prog rv" style="--d:.2s" href="#schedule" data-cursor="Explore" aria-label="Perform program — view details">
+        <img src="https://picsum.photos/seed/forge-perform/900/1100?grayscale" alt="Athlete moving through a mobility drill on the training floor" loading="lazy">
+        <span class="prog-num">03</span>
+        <div class="prog-body">
+          <h3>Perform</h3>
+          <ul class="prog-tags"><li>Fitness</li><li>Mobility</li><li>Endurance</li><li>Movement</li></ul>
+          <p class="prog-desc">Move better, last longer. Mobility, aerobic base, and movement quality — the foundation everything else is built on.</p>
+          <span class="prog-cta">View Program <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAINING EXPERIENCE ============ -->
+<section class="method" id="method" data-nav>
+  <span class="bgnum" data-para="0.1" style="bottom:-4rem;left:1rem" aria-hidden="true">02</span>
+  <div class="wrap">
+    <header class="sec-head rv">
+      <p class="eyebrow">The Method</p>
+      <h2 class="sec-title" style="margin-top:.8rem">What makes us<br>different<span class="dot">.</span></h2>
+    </header>
+    <div class="method-grid">
+      <div class="mcard rv"><span class="mnum" aria-hidden="true">01</span><h3>Coach-Led</h3><p>Every session is structured and guided by experienced coaches. No wandering the floor. No guessing.</p></div>
+      <div class="mcard rv" style="--d:.08s"><span class="mnum" aria-hidden="true">02</span><h3>Data-Driven</h3><p>Track strength, conditioning, consistency, and progress. Your numbers tell the story — we make sure they go up.</p></div>
+      <div class="mcard rv" style="--d:.16s"><span class="mnum" aria-hidden="true">03</span><h3>Community</h3><p>Train alongside people who take their goals seriously. The room raises everyone in it.</p></div>
+      <div class="mcard rv" style="--d:.24s"><span class="mnum" aria-hidden="true">04</span><h3>Built For You</h3><p>Programs adapt to your current ability and long-term goals. Wherever you start, there's a next step.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COACHES ============ -->
+<section id="coaches" data-nav>
+  <div class="wrap">
+    <header class="sec-head split">
+      <div class="rv">
+        <p class="eyebrow">The Coaches</p>
+        <h2 class="sec-title" style="margin-top:.8rem">Meet the people<br>behind the standard<span class="dot">.</span></h2>
+      </div>
+      <p class="sec-sub rv" style="--d:.1s">Certified, experienced, and genuinely invested. Hover a card — or tap on mobile — to see what drives them.</p>
+    </header>
+
+    <div class="coach-grid">
+      <article class="flip rv" tabindex="0" data-cursor="View">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://picsum.photos/seed/forge-c1/600/760?grayscale" alt="Coach Marcus Reed portrait" loading="lazy">
+            <span class="flip-hint">Flip</span>
+            <div class="coach-meta"><strong>MARCUS REED</strong><span>Head of Strength</span></div>
+          </div>
+          <div class="flip-back">
+            <p class="fb-name">Marcus Reed</p><p class="fb-role">Head of Strength</p>
+            <div class="fb-row"><b>Certification</b>CSCS · NSCA — 12 yrs coaching</div>
+            <div class="fb-row"><b>Philosophy</b>"Strength is a skill. Practice it like one."</div>
+            <div class="fb-row"><b>Signature Workout</b>5×5 Deadstop Deadlifts + sled finisher</div>
+            <span class="fb-view">View Profile <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </article>
+      <article class="flip rv" style="--d:.07s" tabindex="0" data-cursor="View">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://picsum.photos/seed/forge-c2/600/760?grayscale" alt="Coach Elena Voss portrait" loading="lazy">
+            <span class="flip-hint">Flip</span>
+            <div class="coach-meta"><strong>ELENA VOSS</strong><span>Olympic Lifting</span></div>
+          </div>
+          <div class="flip-back">
+            <p class="fb-name">Elena Voss</p><p class="fb-role">Olympic Lifting</p>
+            <div class="fb-row"><b>Certification</b>USAW Level 2 — 9 yrs coaching</div>
+            <div class="fb-row"><b>Philosophy</b>"Position first. Speed will follow."</div>
+            <div class="fb-row"><b>Signature Workout</b>Technique EMOM: clean pulls + complexes</div>
+            <span class="fb-view">View Profile <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </article>
+      <article class="flip rv" style="--d:.14s" tabindex="0" data-cursor="View">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://picsum.photos/seed/forge-c3/600/760?grayscale" alt="Coach Darius Cole portrait" loading="lazy">
+            <span class="flip-hint">Flip</span>
+            <div class="coach-meta"><strong>DARIUS COLE</strong><span>Boxing &amp; Conditioning</span></div>
+          </div>
+          <div class="flip-back">
+            <p class="fb-name">Darius Cole</p><p class="fb-role">Boxing &amp; Conditioning</p>
+            <div class="fb-row"><b>Certification</b>ISSA-CPT · Boxing Aus. — 8 yrs coaching</div>
+            <div class="fb-row"><b>Philosophy</b>"The body follows the mind. Train both."</div>
+            <div class="fb-row"><b>Signature Workout</b>10 rounds: bag work + burpee pyramids</div>
+            <span class="fb-view">View Profile <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </article>
+      <article class="flip rv" tabindex="0" data-cursor="View">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://picsum.photos/seed/forge-c4/600/760?grayscale" alt="Coach Sofia Lindqvist portrait" loading="lazy">
+            <span class="flip-hint">Flip</span>
+            <div class="coach-meta"><strong>SOFIA LINDQVIST</strong><span>Mobility &amp; Recovery</span></div>
+          </div>
+          <div class="flip-back">
+            <p class="fb-name">Sofia Lindqvist</p><p class="fb-role">Mobility &amp; Recovery</p>
+            <div class="fb-row"><b>Certification</b>FRC · Yoga RYT-500 — 7 yrs coaching</div>
+            <div class="fb-row"><b>Philosophy</b>"Range you can't control isn't range."</div>
+            <div class="fb-row"><b>Signature Workout</b>Controlled articular flows + loaded stretching</div>
+            <span class="fb-view">View Profile <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </article>
+      <article class="flip rv" style="--d:.07s" tabindex="0" data-cursor="View">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://picsum.photos/seed/forge-c5/600/760?grayscale" alt="Coach James Okada portrait" loading="lazy">
+            <span class="flip-hint">Flip</span>
+            <div class="coach-meta"><strong>JAMES OKADA</strong><span>Hypertrophy</span></div>
+          </div>
+          <div class="flip-back">
+            <p class="fb-name">James Okada</p><p class="fb-role">Hypertrophy</p>
+            <div class="fb-row"><b>Certification</b>NASM-PES — 10 yrs coaching</div>
+            <div class="fb-row"><b>Philosophy</b>"Volume with intention beats intensity without it."</div>
+            <div class="fb-row"><b>Signature Workout</b>Upper density blocks: rest-pause supersets</div>
+            <span class="fb-view">View Profile <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </article>
+      <article class="flip rv" style="--d:.14s" tabindex="0" data-cursor="View">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://picsum.photos/seed/forge-c6/600/760?grayscale" alt="Coach Priya Anand portrait" loading="lazy">
+            <span class="flip-hint">Flip</span>
+            <div class="coach-meta"><strong>PRIYA ANAND</strong><span>Endurance &amp; Performance</span></div>
+          </div>
+          <div class="flip-back">
+            <p class="fb-name">Priya Anand</p><p class="fb-role">Endurance &amp; Performance</p>
+            <div class="fb-row"><b>Certification</b>CF-L3 · UESCA — 11 yrs coaching</div>
+            <div class="fb-row"><b>Philosophy</b>"Pacing is a weapon. Learn to wield it."</div>
+            <div class="fb-row"><b>Signature Workout</b>Threshold intervals: rower + assault bike</div>
+            <span class="fb-view">View Profile <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERFORMANCE LAB ============ -->
+<section class="performance" id="performance">
+  <span class="bgnum" data-para="0.1" style="top:-3rem;left:0" aria-hidden="true">03</span>
+  <div class="wrap perf-grid">
+    <div class="perf-stats">
+      <header style="margin-bottom:2.2rem">
+        <p class="eyebrow rv">Performance Lab</p>
+        <h2 class="sec-title rv" style="--d:.06s;margin-top:.8rem">Progress you<br>can measure<span class="dot">.</span></h2>
+      </header>
+      <div class="pstat rv"><span class="num"><i>+</i><span data-count="28" data-suffix="%">0</span></span><span class="lbl">Average Strength Improvement</span></div>
+      <div class="pstat rv" style="--d:.08s"><span class="num"><span data-count="94" data-suffix="%">0</span></span><span class="lbl">Member Session Consistency</span></div>
+      <div class="pstat rv" style="--d:.16s"><span class="num"><span data-count="12400" data-suffix="+">0</span></span><span class="lbl">Coach-Led Sessions</span></div>
+    </div>
+
+    <div class="chart-card rv" style="--d:.1s" id="chartCard">
+      <div class="chart-head"><span><b>AVG. MEMBER STRENGTH INDEX</b></span><span>12-MONTH VIEW</span></div>
+      <svg class="chart" viewBox="0 0 640 260" role="img" aria-label="Line chart showing average member strength index rising steadily over twelve months">
+        <defs>
+          <linearGradient id="gfade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FF5A1F" stop-opacity=".22"/>
+            <stop offset="1" stop-color="#FF5A1F" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <line class="axis" x1="20" y1="230" x2="620" y2="230"/>
+        <line class="axis" x1="20" y1="170" x2="620" y2="170"/>
+        <line class="axis" x1="20" y1="110" x2="620" y2="110"/>
+        <line class="axis" x1="20" y1="50"  x2="620" y2="50"/>
+        <path class="carea" d="M20,225 L105,196 L190,206 L275,152 L360,164 L450,108 L535,86 L620,42 L620,230 L20,230 Z"/>
+        <path class="cline" pathLength="1" d="M20,225 L105,196 L190,206 L275,152 L360,164 L450,108 L535,86 L620,42"/>
+        <circle class="cdot" cx="20"  cy="225" r="4.5"/><circle class="cdot" cx="105" cy="196" r="4.5"/>
+        <circle class="cdot" cx="190" cy="206" r="4.5"/><circle class="cdot" cx="275" cy="152" r="4.5"/>
+        <circle class="cdot" cx="360" cy="164" r="4.5"/><circle class="cdot" cx="450" cy="108" r="4.5"/>
+        <circle class="cdot" cx="620" cy="42"  r="4.5"/>
+      </svg>
+      <div class="chart-foot">
+        <div class="bars" aria-hidden="true">
+          <div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div>
+          <div class="bar" style="height:34%"></div><div class="bar hot" style="height:72%"></div>
+          <div class="bar" style="height:58%"></div><div class="bar hot" style="height:86%"></div>
+          <div class="bar" style="height:68%"></div>
+        </div>
+        <p class="chart-note">Weekly training volume<br>— sampled from member data</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBER STORIES ============ -->
+<section class="stories" id="stories" data-nav>
+  <div class="wrap">
+    <header class="sec-head split">
+      <div class="rv">
+        <p class="eyebrow">Member Stories</p>
+        <h2 class="sec-title" style="margin-top:.8rem">Real people.<br>Real work<span class="dot">.</span></h2>
+      </div>
+      <p class="sec-sub rv" style="--d:.1s">No exaggerated transformations. Just consistent people, honest timelines, and results they earned.</p>
+    </header>
+  </div>
+
+  <div class="car-viewport" id="carViewport" data-cursor="Drag">
+    <div class="car-track" id="carTrack">
+      <article class="story-card">
+        <img src="https://picsum.photos/seed/forge-s1/500/640?grayscale" alt="Portrait of member Jordan" loading="lazy">
+        <div class="story-body">
+          <h3 class="story-name">JORDAN <span>— 14 MONTHS</span></h3>
+          <div class="story-row"><b>Goal</b><p>Strength + conditioning</p></div>
+          <div class="story-row"><b>Training</b><p>4 sessions / week</p></div>
+          <blockquote class="story-quote">"The biggest change wasn't what happened in the mirror. It was how I started showing up everywhere else."</blockquote>
+          <p class="story-progress">+62% DEADLIFT · −9 KG BF MASS</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <img src="https://picsum.photos/seed/forge-s2/500/640?grayscale" alt="Portrait of member Maya" loading="lazy">
+        <div class="story-body">
+          <h3 class="story-name">MAYA <span>— 9 MONTHS</span></h3>
+          <div class="story-row"><b>Goal</b><p>Fat loss + engine</p></div>
+          <div class="story-row"><b>Training</b><p>3 sessions / week</p></div>
+          <blockquote class="story-quote">"I came in wanting to lose weight. I stayed because for the first time, training actually made sense."</blockquote>
+          <p class="story-progress">−14 KG · 5K ROW PR −2:10</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <img src="https://picsum.photos/seed/forge-s3/500/640?grayscale" alt="Portrait of member Tom" loading="lazy">
+        <div class="story-body">
+          <h3 class="story-name">TOM <span>— 2 YEARS</span></h3>
+          <div class="story-row"><b>Goal</b><p>Muscle gain</p></div>
+          <div class="story-row"><b>Training</b><p>5 sessions / week</p></div>
+          <blockquote class="story-quote">"The programming is the difference. Every block builds on the last. Nothing here is random."</blockquote>
+          <p class="story-progress">+11 KG LEAN MASS · 2× BODYWEIGHT SQUAT</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <img src="https://picsum.photos/seed/forge-s4/500/640?grayscale" alt="Portrait of member Ruth" loading="lazy">
+        <div class="story-body">
+          <h3 class="story-name">RUTH <span>— 18 MONTHS</span></h3>
+          <div class="story-row"><b>Goal</b><p>Performance &amp; mobility</p></div>
+          <div class="story-row"><b>Training</b><p>4 sessions / week</p></div>
+          <blockquote class="story-quote">"At 52 I'm moving better than I did at 30. The coaches scaled everything to me — never the other way around."</blockquote>
+          <p class="story-progress">FULL DEEP SQUAT · FIRST PULL-UP</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <img src="https://picsum.photos/seed/forge-s5/500/640?grayscale" alt="Portrait of member Alex" loading="lazy">
+        <div class="story-body">
+          <h3 class="story-name">ALEX <span>— 6 MONTHS</span></h3>
+          <div class="story-row"><b>Goal</b><p>Conditioning</p></div>
+          <div class="story-row"><b>Training</b><p>3 sessions / week</p></div>
+          <blockquote class="story-quote">"I thought I was in shape. Then I met Darius. Six months later I'm a different athlete entirely."</blockquote>
+          <p class="story-progress">VO₂ +18% · RESTING HR −11 BPM</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="wrap car-ui rv">
+    <span class="car-count"><b id="carNow">01</b> / <span id="carTotal">05</span></span>
+    <div class="car-bar"><div class="car-fill" id="carFill"></div></div>
+    <button class="car-btn" id="carPrev" aria-label="Previous story"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+    <button class="car-btn" id="carNext" aria-label="Next story"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section class="community" id="community" data-nav>
+  <div class="wrap">
+    <header class="sec-head split" style="margin-bottom:2.5rem">
+      <div class="rv">
+        <p class="eyebrow">Community</p>
+        <h2 class="sec-title" style="margin-top:.8rem">Train alone.<br>Belong to something<br>bigger<span class="dot">.</span></h2>
+      </div>
+      <p class="sec-sub rv" style="--d:.1s">Group sessions, team challenges, Saturday community lifts. The people beside you are the reason you come back.</p>
+    </header>
+
+    <div class="collage rv">
+      <figure class="c1"><img src="https://picsum.photos/seed/forge-com1/900/900?grayscale" alt="Members training together during a group strength session" loading="lazy"></figure>
+      <figure class="c2"><img src="https://picsum.photos/seed/forge-com2/600/900?grayscale" alt="A coach correcting a member's squat form" loading="lazy"></figure>
+      <figure class="c3"><img src="https://picsum.photos/seed/forge-com3/900/600?grayscale" alt="Members talking after a training session" loading="lazy"></figure>
+      <figure><img src="https://picsum.photos/seed/forge-com4/600/600?grayscale" alt="Community event at the studio" loading="lazy"></figure>
+      <figure><img src="https://picsum.photos/seed/forge-com5/600/600?grayscale" alt="Team challenge scoreboard on the studio wall" loading="lazy"></figure>
+      <figure class="c6"><img src="https://picsum.photos/seed/forge-com6/900/600?grayscale" alt="Members celebrating a finished team workout" loading="lazy"></figure>
+    </div>
+
+    <div class="community-foot">
+      <div class="comm-stats rv">
+        <div><b class="num" data-count="34">0</b><span>Weekly Group Sessions</span></div>
+        <div><b class="num" data-count="18">0</b><span>Coaches</span></div>
+        <div><b class="num" data-count="2500" data-suffix="+">0</b><span>Members</span></div>
+        <div><b class="num" data-count="12">0</b><span>Community Events / Year</span></div>
+      </div>
+      <a href="#social" class="btn btn-ghost magnetic rv" style="--d:.1s">See the Community <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCHEDULE ============ -->
+<section id="schedule">
+  <span class="bgnum" data-para="0.1" style="top:-2rem;right:0" aria-hidden="true">04</span>
+  <div class="wrap">
+    <header class="sec-head split">
+      <div class="rv">
+        <p class="eyebrow">Schedule</p>
+        <h2 class="sec-title" style="margin-top:.8rem">This week<br>on the floor<span class="dot">.</span></h2>
+      </div>
+      <p class="sec-sub rv" style="--d:.1s">Filter by goal, difficulty, coach, or time. Select a class to start your trial booking.</p>
+    </header>
+
+    <div class="sched-tabs rv" role="tablist" aria-label="Day of week" id="schedTabs">
+      <button class="sched-tab active" data-day="MON" role="tab" aria-selected="true">MON</button>
+      <button class="sched-tab" data-day="TUE" role="tab" aria-selected="false">TUE</button>
+      <button class="sched-tab" data-day="WED" role="tab" aria-selected="false">WED</button>
+      <button class="sched-tab" data-day="THU" role="tab" aria-selected="false">THU</button>
+      <button class="sched-tab" data-day="FRI" role="tab" aria-selected="false">FRI</button>
+      <button class="sched-tab" data-day="SAT" role="tab" aria-selected="false">SAT</button>
+    </div>
+
+    <div class="sched-filters rv">
+      <label>Goal
+        <select id="fGoal"><option value="all">All</option><option>Build</option><option>Lean</option><option>Perform</option></select>
+      </label>
+      <label>Difficulty
+        <select id="fDiff"><option value="all">All</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option><option>All Levels</option></select>
+      </label>
+      <label>Coach
+        <select id="fCoach"><option value="all">All</option><option>Marcus Reed</option><option>Elena Voss</option><option>Darius Cole</option><option>Sofia Lindqvist</option><option>James Okada</option><option>Priya Anand</option></select>
+      </label>
+      <label>Time
+        <select id="fTime"><option value="all">All</option><option value="morning">Morning</option><option value="midday">Midday</option><option value="evening">Evening</option></select>
+      </label>
+    </div>
+
+    <div class="sched-list rv" id="schedList" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ MEMBERSHIP ============ -->
+<section class="membership" id="membership">
+  <div class="wrap">
+    <header class="sec-head rv" style="text-align:center">
+      <p class="eyebrow">Membership</p>
+      <h2 class="sec-title" style="margin-top:.8rem">Commit to the<br>standard<span class="dot">.</span></h2>
+    </header>
+
+    <div class="plans">
+      <article class="plan rv">
+        <h3>Foundation</h3>
+        <p class="plan-for">For building consistency</p>
+        <div class="plan-price"><span class="cur">$</span><span class="amount">89</span><span class="per">/ month</span></div>
+        <ul>
+          <li><b>Open floor access</b> — off-peak hours</li>
+          <li><b>8 group sessions</b> per month</li>
+          <li>Initial movement assessment</li>
+          <li>Member app access</li>
+          <li>Community events</li>
+        </ul>
+        <button class="btn btn-ghost btn-block magnetic js-open-booking">Start Foundation <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </article>
+
+      <article class="plan featured rv" style="--d:.08s">
+        <span class="plan-tag">Recommended</span>
+        <h3>Performance</h3>
+        <p class="plan-for">For structured progression</p>
+        <div class="plan-price"><span class="cur">$</span><span class="amount">149</span><span class="per">/ month</span></div>
+        <ul>
+          <li><b>Unlimited group sessions</b> — 42 weekly</li>
+          <li><b>Full coaching access</b> on the floor</li>
+          <li>Personalized programming app</li>
+          <li>Quarterly performance testing</li>
+          <li>Recovery zone access</li>
+          <li>Priority class booking</li>
+        </ul>
+        <button class="btn btn-primary btn-block magnetic js-open-booking">Start Performance <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </article>
+
+      <article class="plan rv" style="--d:.16s">
+        <h3>Elite</h3>
+        <p class="plan-for">For advanced coaching</p>
+        <div class="plan-price"><span class="cur">$</span><span class="amount">299</span><span class="per">/ month</span></div>
+        <ul>
+          <li><b>Everything in Performance</b></li>
+          <li><b>4 private sessions</b> per month</li>
+          <li>1-on-1 custom programming</li>
+          <li>Monthly coach strategy review</li>
+          <li>Nutrition guidance included</li>
+          <li>Full schedule access</li>
+        </ul>
+        <button class="btn btn-ghost btn-block magnetic js-open-booking">Start Elite <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </article>
+    </div>
+    <p class="membership-note">No joining fee · Cancel or change anytime · First trial session is free</p>
+  </div>
+</section>
+
+<!-- ============ BOOK A TRIAL ============ -->
+<section class="trial" id="trial">
+  <span class="bgnum" data-para="0.12" style="bottom:-4rem;left:50%;transform:translateX(-50%)" aria-hidden="true">05</span>
+  <div class="wrap">
+    <p class="eyebrow rv">First Session Free</p>
+    <h2 class="rv" style="--d:.06s">Your first session<br>starts here<span class="dot">.</span></h2>
+    <p class="lead rv" style="--d:.12s">Meet the coaches. Experience the training floor. Find out whether we're the right environment for you.</p>
+    <button class="btn btn-primary magnetic rv js-open-booking" style="--d:.18s">Book Your Trial <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="wrap">
+    <header class="sec-head rv">
+      <p class="eyebrow">In Their Words</p>
+      <h2 class="sec-title" style="margin-top:.8rem">The room speaks<br>for itself<span class="dot">.</span></h2>
+    </header>
+    <div class="twall">
+      <figure class="tcard t-lg rv"><blockquote>"Best coaching environment I've experienced."</blockquote><figcaption>— Daniel · Member since 2021</figcaption></figure>
+      <figure class="tcard rv"><blockquote>"Everyone knows your name. That matters more than you'd think at 6 a.m."</blockquote><figcaption>— Chen · 1 yr</figcaption></figure>
+      <figure class="tcard t-md t-mark rv"><blockquote>"The programming actually makes sense."</blockquote><figcaption>— Marta · 2 yrs</figcaption></figure>
+      <figure class="tcard rv"><blockquote>"I've trained at a lot of gyms. This is the first one that felt like a team."</blockquote><figcaption>— Okafor · 8 mo</figcaption></figure>
+      <figure class="tcard t-lg rv"><blockquote>"The coaches push you without making it intimidating."</blockquote><figcaption>— Hannah · 3 yrs</figcaption></figure>
+      <figure class="tcard rv"><blockquote>"Clean, focused, no ego. Exactly what I was looking for."</blockquote><figcaption>— Yusuf · 1 yr</figcaption></figure>
+      <figure class="tcard t-md rv"><blockquote>"Worth every cent."</blockquote><figcaption>— Lena · 2 yrs</figcaption></figure>
+      <figure class="tcard rv"><blockquote>"My deadlift went up 40 kg in a year. The data doesn't lie."</blockquote><figcaption>— Rob · 18 mo</figcaption></figure>
+      <figure class="tcard t-mark rv"><blockquote>"Saturday community lifts are the highlight of my week."</blockquote><figcaption>— Aiko · 2 yrs</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL FEED ============ -->
+<section class="social" id="social">
+  <div class="wrap">
+    <header class="sec-head split">
+      <div class="rv">
+        <p class="eyebrow">Social</p>
+        <h2 class="sec-title" style="margin-top:.8rem">Inside the studio<span class="dot">.</span></h2>
+      </div>
+      <a href="#" class="btn btn-ghost magnetic rv" style="--d:.1s" onclick="return false">Follow the Movement <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </header>
+
+    <div class="ig-grid rv">
+      <a class="ig-card" href="#" onclick="return false" data-cursor="View" aria-label="Instagram post: heavy trap bar deadlifts">
+        <img src="https://picsum.photos/seed/forge-ig1/800/800?grayscale" alt="Member performing heavy trap bar deadlifts" loading="lazy">
+        <div class="ig-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <p>Heavy day. New studio deadlift record. 💪🔥 #FORGEstandard</p><span class="ig-stats"><span><svg viewBox="0 0 24 24"><path d="M12 21C7 16.5 3 13 3 8.8 3 6 5 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4 19 4 21 6 21 8.8c0 4.2-4 7.7-9 12.2z"/></svg>1,284</span><span><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.2 7.7L3 21l1.4-5A8.5 8.5 0 1 1 21 12z"/></svg>64</span></span></div>
+      </a>
+      <a class="ig-card" href="#" onclick="return false" data-cursor="View" aria-label="Instagram post: coach clip">
+        <img src="https://picsum.photos/seed/forge-ig2/600/600?grayscale" alt="Coach Elena demonstrating snatch technique" loading="lazy">
+        <div class="ig-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <p>Position first. Speed follows.</p><span class="ig-stats"><span><svg viewBox="0 0 24 24"><path d="M12 21C7 16.5 3 13 3 8.8 3 6 5 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4 19 4 21 6 21 8.8c0 4.2-4 7.7-9 12.2z"/></svg>842</span><span><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.2 7.7L3 21l1.4-5A8.5 8.5 0 1 1 21 12z"/></svg>31</span></span></div>
+      </a>
+      <a class="ig-card" href="#" onclick="return false" data-cursor="View" aria-label="Instagram post: community moment">
+        <img src="https://picsum.photos/seed/forge-ig3/600/600?grayscale" alt="Members gathered around the rig after a team workout" loading="lazy">
+        <div class="ig-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <p>Saturday community lift. Full floor.</p><span class="ig-stats"><span><svg viewBox="0 0 24 24"><path d="M12 21C7 16.5 3 13 3 8.8 3 6 5 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4 19 4 21 6 21 8.8c0 4.2-4 7.7-9 12.2z"/></svg>2,046</span><span><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.2 7.7L3 21l1.4-5A8.5 8.5 0 1 1 21 12z"/></svg>118</span></span></div>
+      </a>
+      <a class="ig-card" href="#" onclick="return false" data-cursor="View" aria-label="Instagram post: workout snippet">
+        <img src="https://picsum.photos/seed/forge-ig4/600/600?grayscale" alt="Close-up of chalked hands on a pull-up bar" loading="lazy">
+        <div class="ig-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <p>Chalk up. Show up.</p><span class="ig-stats"><span><svg viewBox="0 0 24 24"><path d="M12 21C7 16.5 3 13 3 8.8 3 6 5 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4 19 4 21 6 21 8.8c0 4.2-4 7.7-9 12.2z"/></svg>671</span><span><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.2 7.7L3 21l1.4-5A8.5 8.5 0 1 1 21 12z"/></svg>22</span></span></div>
+      </a>
+      <a class="ig-card" href="#" onclick="return false" data-cursor="View" aria-label="Instagram post: event">
+        <img src="https://picsum.photos/seed/forge-ig5/600/600?grayscale" alt="Winter lifting challenge event at the studio" loading="lazy">
+        <div class="ig-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <p>Winter lifting challenge. 84 lifters. One floor.</p><span class="ig-stats"><span><svg viewBox="0 0 24 24"><path d="M12 21C7 16.5 3 13 3 8.8 3 6 5 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4 19 4 21 6 21 8.8c0 4.2-4 7.7-9 12.2z"/></svg>1,508</span><span><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.2 7.7L3 21l1.4-5A8.5 8.5 0 1 1 21 12z"/></svg>77</span></span></div>
+      </a>
+      <a class="ig-card" href="#" onclick="return false" data-cursor="View" aria-label="Instagram post: coach clip">
+        <img src="https://picsum.photos/seed/forge-ig6/800/800?grayscale" alt="Coach Darius holding pads during a boxing conditioning class" loading="lazy">
+        <div class="ig-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <p>Pad work with Darius. Twelve rounds deep.</p><span class="ig-stats"><span><svg viewBox="0 0 24 24"><path d="M12 21C7 16.5 3 13 3 8.8 3 6 5 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4 19 4 21 6 21 8.8c0 4.2-4 7.7-9 12.2z"/></svg>938</span><span><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.2 7.7L3 21l1.4-5A8.5 8.5 0 1 1 21 12z"/></svg>45</span></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <header class="sec-head rv" style="text-align:center">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="sec-title" style="margin-top:.8rem">Before you ask<span class="dot">.</span></h2>
+    </header>
+    <div class="faq-list rv">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is the studio suitable for beginners?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>Yes. Every member starts with a movement assessment, and every program scales to your current ability. Roughly a third of our members arrived with no training history at all.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What should I bring to my first session?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>Training shoes, a towel, and water. We provide everything else — including chalk, guidance, and appropriately humbling programming.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need previous gym experience?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>No. Coaches teach every movement from zero. If you do have experience, we'll meet you where you are and build from there.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How often should I train?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>Most members train 3–4 times per week. Your coach will recommend a frequency based on your goal, schedule, and recovery — not a generic template.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are personal training sessions available?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>Yes. Private 1-on-1 sessions are included in the Elite membership and can be added to any other plan. All sessions are led by our certified coaching staff.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I change my membership?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>Anytime, with no fee. Upgrade, downgrade, or pause your membership through the member app or at the front desk.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What happens during the trial session?<span class="faq-ico" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-in"><p>You'll meet a coach, get a short tour, complete a scaled version of a real class, and finish with a conversation about which program fits your goals. About 60 minutes total. No pressure to join.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="final">
+  <div class="final-bg" aria-hidden="true">
+    <img src="https://picsum.photos/seed/forge-final/1920/1080?grayscale" alt="" loading="lazy">
+  </div>
+  <div class="wrap">
+    <p class="eyebrow rv">Last Call</p>
+    <h2 class="rv" style="--d:.06s">Stop waiting<br>for motivation<span class="dot">.</span></h2>
+    <div class="btn-row rv" style="--d:.12s">
+      <button class="btn btn-primary magnetic js-open-booking">Book Your First Session <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <a href="#coaches" class="btn btn-ghost magnetic">Meet the Coaches</a>
+    </div>
+    <p class="tagline rv" style="--d:.18s">No ego. No shortcuts. Just work.</p>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#hero" class="logo">FORGE<b>/</b></a>
+        <p>Structured training. Serious coaching.<br>A community that expects more from you.</p>
+        <address>
+          340 Ironworks District<br>Brooklyn, NY 11211<br>
+          <a href="tel:+17185550192" style="color:inherit">+1 (718) 555-0192</a><br>
+          <a href="mailto:hello@forgestudio.co" style="color:inherit">hello@forgestudio.co</a>
+        </address>
+        <p style="margin-top:1rem">MON–FRI 05:30 – 22:00<br>SAT 07:00 – 20:00 · SUN 08:00 – 18:00</p>
+      </div>
+      <nav class="foot-col" aria-label="Studio">
+        <b>Studio</b>
+        <ul>
+          <li><a href="#method">Training</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+        </ul>
+      </nav>
+      <nav class="foot-col" aria-label="Community">
+        <b>Community</b>
+        <ul>
+          <li><a href="#stories">Member Stories</a></li>
+          <li><a href="#social">Events</a></li>
+          <li><a href="#social">Instagram</a></li>
+          <li><a href="mailto:hello@forgestudio.co">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="foot-col" aria-label="Information">
+        <b>Information</b>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 FORGE Performance Studio. All rights reserved.</span>
+      <div class="foot-social">
+        <a href="#" onclick="return false" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" onclick="return false" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" onclick="return false" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <span class="sc-text"><span class="sc-dot" aria-hidden="true"></span>Ready to train?</span>
+  <button class="btn btn-primary js-open-booking">Book a Trial <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+</div>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div class="modal" id="booking" role="dialog" aria-modal="true" aria-labelledby="bkTitle">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box">
+    <div class="modal-head">
+      <strong id="bkTitle">Book Your Trial — 01/05</strong>
+      <button class="modal-close" data-close aria-label="Close booking">
+        <svg viewBox="0 0 24 24" width="16" height="16" style="stroke:currentColor;stroke-width:2.4;fill:none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ol class="bk-steps" id="bkSteps" aria-label="Booking progress">
+      <li class="cur">01</li><li class="sep">—</li><li>02</li><li class="sep">—</li><li>03</li><li class="sep">—</li><li>04</li>
+    </ol>
+    <div class="bk-viewport">
+      <div class="bk-track" id="bkTrack">
+        <div class="bk-step">
+          <p class="bk-q">What's your goal?</p>
+          <div class="opt-grid" data-field="goal">
+            <button class="opt" data-val="Build"><span class="opt-check" aria-hidden="true"></span><span><strong>BUILD</strong><span>Muscle &amp; strength</span></span></button>
+            <button class="opt" data-val="Lean"><span class="opt-check" aria-hidden="true"></span><span><strong>LEAN</strong><span>Fat loss &amp; conditioning</span></span></button>
+            <button class="opt" data-val="Perform"><span class="opt-check" aria-hidden="true"></span><span><strong>PERFORM</strong><span>Fitness, mobility &amp; endurance</span></span></button>
+          </div>
+        </div>
+        <div class="bk-step">
+          <p class="bk-q">When do you prefer to train?</p>
+          <div class="opt-grid" data-field="time">
+            <button class="opt" data-val="Morning"><span class="opt-check" aria-hidden="true"></span><span><strong>MORNING</strong><span>06:00 – 11:00</span></span></button>
+            <button class="opt" data-val="Midday"><span class="opt-check" aria-hidden="true"></span><span><strong>MIDDAY</strong><span>11:00 – 16:00</span></span></button>
+            <button class="opt" data-val="Evening"><span class="opt-check" aria-hidden="true"></span><span><strong>EVENING</strong><span>16:00 – 21:00</span></span></button>
+          </div>
+        </div>
+        <div class="bk-step">
+          <p class="bk-q">Pick your first class.</p>
+          <div class="opt-grid" id="bkClasses" data-field="cls"></div>
+        </div>
+        <div class="bk-step">
+          <p class="bk-q">Almost done.</p>
+          <div class="bk-form">
+            <div><label for="bkName">Full name</label><input id="bkName" type="text" autocomplete="name" placeholder="Alex Carter"></div>
+            <div><label for="bkEmail">Email</label><input id="bkEmail" type="email" autocomplete="email" placeholder="alex@email.com"></div>
+            <div><label for="bkPhone">Phone (optional)</label><input id="bkPhone" type="tel" autocomplete="tel" placeholder="+1 (___) ___-____"></div>
+          </div>
+        </div>
+        <div class="bk-step">
+          <p class="bk-q">Confirm your trial.</p>
+          <div class="bk-summary" id="bkSummary"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bk-nav">
+      <button class="bk-back" id="bkBack" style="visibility:hidden">← Back</button>
+      <span class="bk-hint" id="bkHint">Select an option to continue</span>
+      <button class="btn btn-primary" id="bkNext">Continue <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
